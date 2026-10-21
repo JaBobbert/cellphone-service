@@ -1,11 +1,19 @@
 package com.pluralsight;
 
 public class CellPhone {
-    int serialNumber;
-    String model;
-    String carrier;
-    long phoneNumber;
-    String owner;
+    private int serialNumber;
+    private String model;
+    private String carrier;
+    private String phoneNumber;
+    private String owner;
+
+    public CellPhone(){
+        serialNumber = 0;
+        model = "";
+        carrier = "";
+        phoneNumber = "";
+        owner = "";
+    }
 
 
     public int serialNumber() {
@@ -20,7 +28,7 @@ public class CellPhone {
         return carrier;
     }
 
-    public long phoneNumber() {
+    public String phoneNumber() {
         return phoneNumber;
     }
 
@@ -40,7 +48,7 @@ public class CellPhone {
         this.carrier = carrier;
     }
 
-    public void setPhoneNumber(long phoneNumber) {
+    public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
 

@@ -15,7 +15,7 @@ public class CellPhoneApplication {
         System.out.print("Who is the carrier? ");
         String carrier = scan.nextLine();
         System.out.print("What is the phone number? ");
-        long phoneNumber = scan.nextLong();
+        String phoneNumber = scan.nextLine();
         scan.nextLine();
         System.out.print("Who is the owner of the phone? ");
         String owner = scan.nextLine();
