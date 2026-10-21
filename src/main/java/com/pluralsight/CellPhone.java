@@ -1,11 +1,14 @@
 package com.pluralsight;
 
+import java.util.Scanner;
+
 public class CellPhone {
     private int serialNumber;
     private String model;
     private String carrier;
     private String phoneNumber;
     private String owner;
+    private String dail;
 
     public CellPhone(){
         serialNumber = 0;
@@ -13,6 +16,7 @@ public class CellPhone {
         carrier = "";
         phoneNumber = "";
         owner = "";
+        dail = "";
     }
 
 
@@ -34,6 +38,10 @@ public class CellPhone {
 
     public String owner() {
         return owner;
+    }
+
+    public void dial(String phoneNumber){
+        System.out.println("\n" + owner + "'s phone is calling " + phoneNumber);
     }
 
     public void setSerialNumber(int serialNumber) {
